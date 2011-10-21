@@ -1,5 +1,2 @@
 require "rspec_caching_test/version"
-
-module RspecCachingTest
-
-end
+require "rspec_caching_test/test_store"
