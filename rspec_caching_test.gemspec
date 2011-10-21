@@ -6,12 +6,12 @@ Gem::Specification.new do |s|
   s.name        = "rspec_caching_test"
   s.version     = RspecCachingTest::VERSION
   s.authors     = ["Kengo Suzuki"]
-  s.email       = ["k_suzuki@e-savaway.jp"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "https://github.com/kengos/rspec_caching_test"
+  s.summary     = %q{RSpec caching test}
+  s.description = %q{RSpec caching test helper}
 
   s.rubyforge_project = "rspec_caching_test"
+  s.add_dependency "rails", ">=3.0.0"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
