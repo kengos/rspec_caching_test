@@ -1,0 +1,5 @@
+= rspec_caching_test
+
+this is copy project
+
+https://github.com/econsultancy/rspec-caching-test-plugin/blob/econsultancy-2011-08-05
