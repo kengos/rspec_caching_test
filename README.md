@@ -95,7 +95,7 @@ end
 
 View:  
 
-```ruby
+```erb
 <%= cache 'my_cache' do %>
   <p>my_cache</p>
 <% end %>
