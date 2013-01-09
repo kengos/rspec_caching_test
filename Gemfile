@@ -6,6 +6,7 @@ gemspec
 group :development, :test do
   gem 'guard-rspec'
   gem 'fuubar'
+  gem 'tzinfo'
   gem 'libnotify', require: false
   gem 'rb-inotify', require: false
   gem 'rb-fsevent', require: false

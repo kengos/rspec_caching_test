@@ -1,16 +1,14 @@
 # coding: utf-8
+require 'tzinfo'
+require 'action_controller/railtie'
 
-require 'rails'
-
-module RspecCachingTest
+module RspecCachingApplication
   class Application < Rails::Application
-    config.active_support.deprecation :notify
+    config.active_support.deprecation :log
   end
 end
-RspecCachingTest::Application.initialize!
+RspecCachingApplication::Application.initialize!
 
-require 'active_support/railtie'
-require 'action_controller/railtie'
 require 'rspec'
 require 'rspec/rails'
 
@@ -18,7 +16,6 @@ require File.expand_path(File.dirname(__FILE__) + '/../lib/rspec_caching_test')
 
 RSpec.configure do |config|
   config.mock_with :rspec
-  config.use_transactional_fixtures = false
   config.treat_symbols_as_metadata_keys_with_true_values = true
   config.filter_run focus: true
   config.run_all_when_everything_filtered = true
