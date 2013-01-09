@@ -1,7 +1,7 @@
 # coding: utf-8
 
 module RspecCachingTest
-  class CachingTestStore < ::ActiveSupport::Cache::Store
+  class TestStore < ::ActiveSupport::Cache::Store
     # Record of what the app tells us to cache
     attr_accessor :cached
       
