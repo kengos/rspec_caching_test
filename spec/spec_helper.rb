@@ -2,12 +2,12 @@
 require 'tzinfo'
 require 'action_controller/railtie'
 
-module RspecCachingApplication
+module RspecCachingTest
   class Application < Rails::Application
     config.active_support.deprecation = :notify
   end
 end
-RspecCachingApplication::Application.initialize!
+RspecCachingTest::Application.initialize!
 
 require 'rspec'
 require 'rspec/rails'
