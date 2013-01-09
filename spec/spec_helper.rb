@@ -4,7 +4,7 @@ require 'action_controller/railtie'
 
 module RspecCachingApplication
   class Application < Rails::Application
-    config.active_support.deprecation :log
+    config.active_support.deprecation = :notify
   end
 end
 RspecCachingApplication::Application.initialize!
